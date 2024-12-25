@@ -1,0 +1,134 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 3fr 1fr 1fr 1fr;
+  height: 100vh;
+}
+.wrapper > div {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: grid;
+  place-content: center;
+}
+
+.header {
+  background-color: #121331;
+}
+
+.menu {
+  background-color: #ef3d4d;
+  grid-column: span 4;
+}
+
+.hero {
+  background-color: #4c86c6;
+  grid-column: span 5;
+}
+
+.main {
+  background-color: #24344b;
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.image {
+  background-color: #c1e4e6;
+  grid-column: 5/6;
+}
+
+.extra {
+  background-color: #4ebb98;
+  grid-row: 4/5;
+  grid-column: 5/6;
+}
+
+.banner {
+  background-color: #ffd169;
+  grid-column: span 5;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: grid;
+    min-height: 90vh;
+    grid-template-rows: auto 4fr 3fr 2fr 2fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .header {
+    background-color: #121331;
+    grid-column: span 4;
+  }
+  .menu {
+    background-color: #ef3d4d;
+    grid-row: 3/8;
+    grid-column: 1/2;
+  }
+  .hero {
+    background-color: #4c86c6;
+    grid-column: span 4;
+    grid-row: 2/3;
+  }
+  .main {
+    background-color: #24344b;
+    grid-column: span 3;
+    grid-row: 3/4;
+  }
+  .image {
+    background-color: #c1e4e6;
+    grid-column: span 1;
+    grid-row: 5/6;
+  }
+  .extra {
+    background-color: #4ebb98;
+    grid-column: 2/4;
+    grid-row: 5/6;
+  }
+  .banner {
+    background-color: #ffd169;
+    grid-column: span 3;
+    grid-row: 4/5;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    display: grid;
+    min-height: 90vh;
+    grid-template-rows: repeat(14, 1fr);
+    grid-template-columns: 1fr;
+  }
+  .header {
+    background-color: #121331;
+    grid-column: span 1;
+  }
+  .menu {
+    background-color: #ef3d4d;
+    grid-column: span 1;
+    grid-row: 2/3;
+  }
+  .hero {
+    background-color: #4c86c6;
+    grid-row: span 3;
+    grid-column: span 1;
+  }
+  .main {
+    background-color: #24344b;
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+  .image {
+    background-color: #c1e4e6;
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .extra {
+    background-color: #4ebb98;
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .banner {
+    background-color: #ffd169;
+    grid-column: span 1;
+    grid-row: 11/13;
+  }
+}/*# sourceMappingURL=style.css.map */
